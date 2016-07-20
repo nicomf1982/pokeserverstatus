@@ -1,0 +1,17 @@
+{
+  "name": "pokestatusbot",
+  "version": "1.0.0",
+  "description": "update check for pokemongo server",
+  "main": "bot.js",
+  "dependencies": {
+    "moment": "^2.14.1",
+    "request": "^2.73.0",
+    "twitter": "^1.3.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}
