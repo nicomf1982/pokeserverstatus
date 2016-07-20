@@ -9,9 +9,12 @@ var time= new Date();
 
 
 http = require ('http');
-handle = (req, res) -> res.end "hit";
-server = http.createServer handle;
-server.listen process.env.PORT || 5000;
+function handle (req, res){
+  res.end('hit');
+}
+//handle = (req, res) -> res.end "hit";
+var server = http.createServer (handle);
+server.listen (process.env.PORT || 5000);
 
 var client = new Twitter({
   consumer_key: 'WvqEnIWXqhmjXLpCJLHrNlKtR',
@@ -44,4 +47,4 @@ setInterval(function () {
     });
   }
 
-}, 60000*5);
+}, 6000*2);
