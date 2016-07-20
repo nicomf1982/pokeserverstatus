@@ -5,6 +5,14 @@ var trend =[];
 var usrTw=[];
 var time= new Date();
 
+
+
+
+http = require ('http');
+handle = (req, res) -> res.end "hit";
+server = http.createServer handle;
+server.listen process.env.PORT || 5000;
+
 var client = new Twitter({
   consumer_key: 'WvqEnIWXqhmjXLpCJLHrNlKtR',
   consumer_secret: 'SpEyaZgOvAMYYFvzl8JHrKrEXq9PDeQVgIZVL5iXwTIYobQXY8',
