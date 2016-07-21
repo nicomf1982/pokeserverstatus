@@ -5,16 +5,15 @@ var trend =[];
 var usrTw=[];
 var time= new Date();
 
-
-
-
+//just for heroku//
 http = require ('http');
 function handle (req, res){
   res.end('hit');
 }
-//handle = (req, res) -> res.end "hit";
 var server = http.createServer (handle);
 server.listen (process.env.PORT || 5000);
+//
+
 
 var client = new Twitter({
   consumer_key: 'WvqEnIWXqhmjXLpCJLHrNlKtR',
@@ -47,4 +46,4 @@ setInterval(function () {
     });
   }
 
-}, 60000*5);
+}, 60000*2);
